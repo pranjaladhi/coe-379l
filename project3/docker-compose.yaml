@@ -1,0 +1,13 @@
+---
+version: '3'
+
+services:
+  flask-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: kelach/lenet5a_model
+    ports:
+      - "5000:5000"
+    volumes:
+      - /data:/data
