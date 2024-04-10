@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import numpy as np
 import tensorflow as tf
 import json
