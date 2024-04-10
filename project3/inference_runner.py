@@ -66,6 +66,7 @@ def predict():
     print(f"{'='*20} PREDICTIONS {'='*20}")
     for i, prediction in enumerate(response_obj):
         print(f"'{image_files[i]}': {'damage' if prediction[0][0] > 0.9 else 'no damage' }")
+    print()
 
 def root():
     """
@@ -73,14 +74,18 @@ def root():
     """
     
     response = requests.get(server_url)
+    print(f"{'='*20} WELCOME {'='*20}")
     print(response.text)
+    print()
 
 def info():
     """
     Model information
     """
     response = requests.get(f"{server_url}/info")
+    print(f"{'='*20} METADATA {'='*20}")
     print(response.text)
+    print()
 
 if __name__ == "__main__":
     init()

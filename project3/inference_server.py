@@ -51,7 +51,7 @@ def home():
     """
     Introduction to the API
     """
-    return f""""Welcome! You've the home endpoint for the building damage prediction machine learning inference server. Here's a brief description of each route:
+    return f""""Welcome! You've reached the home endpoint for the building damage prediction machine learning inference server. Here's a brief description of each route:
 - /predict: POST request that accepts a JSON object with an image key containing a list of images. The images are processed and predictions are returned.
 - /info: GET request that returns metadata about the model.
 - /: GET request that returns this message :)
