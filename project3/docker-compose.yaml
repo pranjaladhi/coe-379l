@@ -6,7 +6,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: kelach/lenet5a_model
+    image: kelach/lenet5a_model:1.0
     ports:
       - "5000:5000"
     volumes:

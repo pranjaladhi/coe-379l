@@ -7,4 +7,3 @@ COPY models/hurricane_lenet5a_model.keras /model.keras
 COPY configs.json /configs.json
 
 CMD ["python3", "inference_server.py"]
-# CMD ["sleep", "infinity"] (used for debugging)
