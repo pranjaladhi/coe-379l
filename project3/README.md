@@ -4,6 +4,24 @@
 
 This project focuses on using three different model architectures to develop a neural network for damage prediction. The models developed are ANN, Lenet-5 CNN, and Alternate Lenet-5 CNN. The three models were trained on a Hurrican Harvey data set that included images with building damage and no damage. More info can be found [here](). From developing and evaluating the three models, it was found that the Alternate Lenet-5 performed the best in accurately clasifying the images to the two categories. The model was then packaged in an inference server for execution over a network. The following includes instructions to setup and utilize the developed Lenet-5 Model to run predictions on any input image. 
 
+## File Structure
+
+### [Dockerfile](https://github.com/pranjaladhi/coe-379l/blob/main/project3/Dockerfile)
+Contains important commands for building the image. Includes the installation of specific Python libraries that the script utilizes.
+
+### [configs.json](https://github.com/pranjaladhi/coe-379l/blob/main/project3/configs.json)
+Specifies the path for the data used in the model, and defines the URL of the inference server.
+
+### [docker-compose.yaml](https://github.com/pranjaladhi/coe-379l/blob/main/project3/docker-compose.yaml)
+Configures the application container, which can then be created and ran with the configuration via a single command.
+
+### [inference_runner.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_runner.py)
+Script that interacts with the running server that includes the developed Alternate Lenet-5 model.
+
+### [inference_server.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_server.py)
+Script that includes the server in which the requests can be made. 
+
+
 ## Installation
 
 Docker installation is required to build and run the Docker image provided. The image includes all requirements needed to succesfully setup and utilize the model provided. Docker installation information can be found [here](https://docs.docker.com/engine/install/ubuntu/). 
@@ -74,6 +92,11 @@ To utilize the model for image assessing, the input image has to be included wit
 </td>
 </tr>
 <tr>
+
+<td>
+1
+</td>
+    
 <td> 
 
 `python3 inference_runner.py -r` 
@@ -96,6 +119,11 @@ Happy inferencing!
 </tr>
 
 <tr>
+
+<td>
+2
+</td>
+
 <td>
 
 `python3 inference_runner.py -i` 
@@ -103,7 +131,7 @@ Happy inferencing!
 </td>
 <td>
     
-```json
+```
 ==================== METADATA ====================
 {
     "accuracy":0.983587,
@@ -118,6 +146,11 @@ Happy inferencing!
 </tr>
 
 <tr>
+
+<td>
+3
+</td>
+
 <td>
 
 `python3 inference_runner.py -p` 
