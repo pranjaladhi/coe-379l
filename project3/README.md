@@ -6,19 +6,19 @@ This project focuses on using three different model architectures to develop a n
 
 ## File Structure
 
-### *[Dockerfile]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/Dockerfile)
+### *[Dockerfile](https://github.com/pranjaladhi/coe-379l/blob/main/project3/Dockerfile)*
 Contains important commands for building the image. Includes the installation of specific Python libraries that the script utilizes.
 
-### *[configs.json]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/configs.json)
+### *[configs.json](https://github.com/pranjaladhi/coe-379l/blob/main/project3/configs.json)*
 Specifies the path for the data used in the model, and defines the URL of the inference server.
 
-### *[docker-compose.yaml]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/docker-compose.yaml)
+### *[docker-compose.yaml](https://github.com/pranjaladhi/coe-379l/blob/main/project3/docker-compose.yaml)*
 Configures the application container, which can then be created and ran with the configuration via a single command.
 
-### *[inference_runner.py]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_runner.py)
+### *[inference_runner.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_runner.py)*
 Script that interacts with the running server that includes the developed Alternate Lenet-5 model.
 
-### *[inference_server.py]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_server.py)
+### *[inference_server.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_server.py)*
 Script that includes the server in which the requests can be made. 
 
 
