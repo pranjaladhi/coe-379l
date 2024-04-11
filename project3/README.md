@@ -41,6 +41,7 @@ As mentioned previously, the model is packaged within an inference server. The f
 ### 1. Existing Image
 
 The existing image to run the container can be pulled from Docker Hub, executing the line:
+* Note: I you wish to re-build the docker image locally, you will first need to run  `project3.ipynb` in order to save the models. To do this, the files to train the model will be needed as well, which can be found [here](https://github.com/joestubbs/coe379L-sp24/tree/master/datasets/unit03/Project3/data_all_modified).
 ```
 $ docker pull kelach/lenet5a_model:1.0
 ```
@@ -51,18 +52,24 @@ $ docker run -it --rm -p 5000:5000 kelach/lenet5a_model:1.0
 
 ### 2. Using `docker-compose`
 
-Manually building the image to run the container that includes the inference server is also possible. With all source files within one directory, execute the command:
+Alternatively, you can start the inference server in a docker container in the background using the following command:
 ```
-$ docker-compose up
+$ docker-compose up -d
 ```
-* Note: the `project3.ipynb` file will first have to be ran to create and save the models. To do this, the files to train the model will be needed as well, which can be found [here](https://github.com/joestubbs/coe379L-sp24/tree/master/datasets/unit03/Project3/data_all_modified) Otherwise, the `docker-compose.yaml` will not build the image and return an error.
 
 Either of the methods described above will start and run the container for the inference server. Requests to the server can now be made.
 
 To stop running the container, execute the line:
 ```
+$ docker stop <CONTAINER-ID>
+```
+Or:
+
+```
 $ docker-compose down
 ```
+
+Depending on the method of deployment respectively.
 
 ## Usage
 
