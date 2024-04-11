@@ -19,7 +19,7 @@ Configures the application container, which can then be created and ran with the
 Script that interacts with the running server that includes the developed Alternate Lenet-5 model.
 
 ### *[inference_server.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_server.py)*
-Script that includes the server in which the requests can be made. 
+Script that includes the server in which the requests can be made.
 
 
 ## Installation
@@ -34,7 +34,7 @@ $ git clone git@github.com:pranjaladhi/coe-379l.git
 ```
 Next, change into the `project3` directory with the line:
 ```
-cd ./project3
+$ cd ./project3
 ```
 As mentioned previously, the model is packaged within an inference server. The following are instructions to either retrieve or build the image to run the containzerized server. 
 
