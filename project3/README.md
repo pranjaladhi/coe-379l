@@ -2,23 +2,23 @@
 
 ## Introduction
 
-This project focuses on using three different model architectures to develop a neural network for damage prediction. The models developed are ANN, Lenet-5 CNN, and Alternate Lenet-5 CNN. The three models were trained on a Hurrican Harvey data set that included images with building damage and no damage. More info can be found [here](). From developing and evaluating the three models, it was found that the Alternate Lenet-5 performed the best in accurately clasifying the images to the two categories. The model was then packaged in an inference server for execution over a network. The following includes instructions to setup and utilize the developed Lenet-5 Model to run predictions on any input image. 
+This project focuses on using three different model architectures to develop a neural network for damage prediction. The models developed are ANN, Lenet-5 CNN, and Alternate Lenet-5 CNN. The three models were trained on a Hurrican Harvey data set that included images with building damage and no damage. More info can be found [here](https://github.com/pranjaladhi/coe-379l/blob/main/project3/COE_379L_Project_3.pdf). From developing and evaluating the three models, it was found that the Alternate Lenet-5 performed the best in accurately clasifying the images to the two categories. The model was then packaged in an inference server for execution over a network. The following includes instructions to setup and utilize the developed Lenet-5 Model to run predictions on any input image. 
 
 ## File Structure
 
-### [Dockerfile](https://github.com/pranjaladhi/coe-379l/blob/main/project3/Dockerfile)
+### *[Dockerfile]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/Dockerfile)
 Contains important commands for building the image. Includes the installation of specific Python libraries that the script utilizes.
 
-### [configs.json](https://github.com/pranjaladhi/coe-379l/blob/main/project3/configs.json)
+### *[configs.json]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/configs.json)
 Specifies the path for the data used in the model, and defines the URL of the inference server.
 
-### [docker-compose.yaml](https://github.com/pranjaladhi/coe-379l/blob/main/project3/docker-compose.yaml)
+### *[docker-compose.yaml]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/docker-compose.yaml)
 Configures the application container, which can then be created and ran with the configuration via a single command.
 
-### [inference_runner.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_runner.py)
+### *[inference_runner.py]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_runner.py)
 Script that interacts with the running server that includes the developed Alternate Lenet-5 model.
 
-### [inference_server.py](https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_server.py)
+### *[inference_server.py]*(https://github.com/pranjaladhi/coe-379l/blob/main/project3/inference_server.py)
 Script that includes the server in which the requests can be made. 
 
 
