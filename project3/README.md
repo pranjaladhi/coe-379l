@@ -23,6 +23,7 @@ Manually building the image to run the container is also possible. With all sour
 ```
 $ docker-compose up
 ```
+*Note: the `project3.ipynb` file will first have to be ran to create and save the models. Otherwise, the `docker-compose.yaml` will not build the image. 
 
 Either of the methods described above will start and run the container for the inference server. Requests to the server can now be made. 
 
@@ -55,7 +56,7 @@ Requests supported:
 <tr>
 <td> 
 
-`"curl localhost:5000/"` 
+`curl localhost:5000/` 
 
 </td>
 <td>
@@ -76,7 +77,7 @@ Happy inferencing!
 <tr>
 <td>
 
-`"curl localhost:5000/"` 
+`curl localhost:5000/info` 
 
 </td>
 <td>
@@ -97,7 +98,8 @@ Happy inferencing!
 <tr>
 <td>
 
-`` 
+` curl -X POST -F "json={"image": image}" localhost:500
+0/predict` 
 
 </td>
 <td>
