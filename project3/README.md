@@ -60,7 +60,7 @@ Requests supported:
 </td>
 <td>
     
-```json
+```
 Welcome! You've reached the home endpoint for the building damage prediction machine learning inference server. Here's a brief description of each route:
 
 - /predict: POST request that accepts a JSON object with an image key containing a list of images. The images are processed and predictions are returned.
@@ -82,11 +82,13 @@ Happy inferencing!
 <td>
     
 ```json
-{"accuracy":0.983587,
-"description":"A convolutional neural network model trained to predict building damage from images. The model was trained on satalite image data of buildings after the Texas Hurricane Harvey.",
-"model_name":"lenet5a",
-"trainable_parameters_count":2601666,
-"version":"1.0"}
+{
+    "accuracy":0.983587,
+    "description":"A convolutional neural network model trained to predict building damage from images. The model was trained on     satalite image data of buildings after the Texas Hurricane Harvey.",
+    "model_name":"lenet5a",
+    "trainable_parameters_count":2601666,
+    "version":"1.0"
+}
 ```
 
 </td>
@@ -100,7 +102,8 @@ Happy inferencing!
 </td>
 <td>
     
-```json
+```
+
 
 ```
 
