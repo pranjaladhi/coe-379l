@@ -1,4 +1,4 @@
-# Performance Evaluation of CNN and ANN Models on Prediction Building Damage
+# Project 3: Deployed CNN and ANN Models using Docker for making Building Damage Predictions
 
 ## Installation
 
