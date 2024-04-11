@@ -1,4 +1,4 @@
-# Project 3: Neural Network Models
+# Performance Evaluation of CNN and ANN Models on Prediction Building Damage
 
 ## Installation
 
