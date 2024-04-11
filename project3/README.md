@@ -87,6 +87,10 @@ To utilize the model for image assessing, the input image has to be included wit
 <tr>
 <td> 
 
+</td>
+
+<td>
+    
 ### Route 
 
 </td>
