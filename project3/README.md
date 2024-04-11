@@ -1,4 +1,4 @@
-# Project 3: Neural Network Model
+# Project 3: Neural Network Models
 
 ## Installation
 
@@ -97,7 +97,7 @@ Happy inferencing!
 <tr>
 <td>
 
-`POST " curl localhost:5000/predict"` 
+`` 
 
 </td>
 <td>
